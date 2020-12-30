@@ -19,6 +19,7 @@
     "gatsby-plugin-sass": "^2.0.11",
     "gatsby-plugin-sharp": "^2.0.30",
     "gatsby-plugin-sitemap": "^2.0.10",
+    "gatsby-plugin-typescript": "^2.9.0",
     "gatsby-plugin-typography": "^2.2.10",
     "gatsby-remark-autolink-headers": "^2.0.16",
     "gatsby-remark-copy-linked-files": "^2.0.11",
@@ -64,7 +65,8 @@
     "lighthousebot": "git+https://github.com/GoogleChromeLabs/lighthousebot.git",
     "prettier": "^1.14.2",
     "recursive-readdir": "^2.2.2",
-    "signale": "^1.3.0"
+    "signale": "^1.3.0",
+    "typescript": "^4.1.3"
   },
   "homepage": "https://github.com/JaeYeopHan/gatsby-starter-bee#readme",
   "keywords": [
