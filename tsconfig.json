@@ -5,12 +5,31 @@
     "jsx": "preserve",
     "lib": ["dom", "esnext"],
     "baseUrl": ".",
+    "paths": {
+      "@assets": [
+        "src/assets/*"
+      ],
+      "*": [
+        "src/types/*",
+        "src/**/*",
+        "content/**/*",
+        "*"
+      ]
+    },
     "strict": true,
     "noEmit": true,
     "isolatedModules": true,
     "esModuleInterop": true,
     "noUnusedLocals": false,
-    "allowJs": true
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "noImplicitAny": true
   },
-  "exclude": ["node_modules", "public", ".cache"]
+  "exclude": ["node_modules", "public", ".cache"],
+  "include": [
+    "src",
+    "content"
+  ]
 }
