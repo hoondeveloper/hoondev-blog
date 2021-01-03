@@ -36,7 +36,7 @@ export default ({ data, pageContext, location }) => {
       <PostDate date={date} />
       <PostContainer html={post.html} />
       <SocialShare title={postTitle} author={author} />
-      {!!sponsor.buyMeACoffeeId && <SponsorButton sponsorId={sponsor.buyMeACoffeeId} />}
+      {/*{!!sponsor.buyMeACoffeeId && <SponsorButton sponsorId={sponsor.buyMeACoffeeId} />}*/}
       <Elements.Hr />
       <PostNavigator pageContext={pageContext} />
       {!!disqusShortName && (
