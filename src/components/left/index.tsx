@@ -6,7 +6,7 @@ import tw from 'twin.macro';
 const LeftContainer = styled.div`
   width: 300px;
   flex-shrink: 0;
-  ${tw`px-8 py-4`}
+  ${tw`mx-auto w-full md:mx-0 md:w-auto px-8 py-4`}
 `;
 
 const Name = styled.span`
@@ -61,7 +61,7 @@ const DetailItem: React.FC<{ icon: string; text: string }> = ({ icon, text }) =>
   );
 };
 
-export const Left: React.FC<any> = () => {
+export const Profile: React.FC<any> = () => {
   return (
     <LeftContainer>
       <Name>Lim Ji Hoon</Name>

@@ -8,7 +8,6 @@ import { PostTitle } from '../components/post-title';
 import { PostDate } from '../components/post-date';
 import { PostContainer } from '../components/post-container';
 import { SocialShare } from '../components/social-share';
-import { SponsorButton } from '../components/sponsor-button';
 import { PostNavigator } from '../components/post-navigator';
 import { Disqus } from '../components/disqus';
 import { Utterances } from '../components/utterances';
@@ -30,7 +29,7 @@ export default ({ data, pageContext, location }) => {
   const { title: postTitle, date } = post.frontmatter;
 
   return (
-    <Layout location={location} title={title}>
+    <Layout location={location} title={title} isPost={true}>
       <Head title={postTitle} description={post.excerpt} />
       <PostTitle title={postTitle} />
       <PostDate date={date} />
