@@ -15,7 +15,7 @@ interface IThemeContextValue {
 
 const DefaultValue: IThemeContextValue = {
   state: {
-    theme: getTheme(Storage.getTheme(Dom.hasClassOfBody(THEME.DARK))),
+    theme: 'light',
   },
   actions: {
     setTheme: () => {},
