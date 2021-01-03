@@ -15,7 +15,7 @@ const Name = styled.span`
   font-family: 'Montserrat', serif;
   font-weight: 800;
   letter-spacing: 0.01em;
-  ${tw`text-gray-800 dark:text-gray-200`}
+  ${tw`text-gray-700 dark:text-gray-300`}
 `;
 
 const Job = styled.span`
