@@ -13,9 +13,9 @@ export const Utterances = ({ repo }) => {
   const { state } = useContext(ThemeContext);
 
   useEffect(() => {
-    // while (rootElm.current.hasChildNodes()) {
-    //   rootElm.current.removeChild(rootElm.current.firstChild);
-    // }
+    while (rootElm.current.hasChildNodes()) {
+      rootElm.current.removeChild(rootElm.current.firstChild);
+    }
 
     const isDarkTheme = state?.theme === THEME.DARK;
     const utterances = document.createElement('script');
