@@ -98,10 +98,20 @@ module.exports = {
     `gatsby-plugin-feed`,
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-sass`,
+    `gatsby-plugin-postcss`,
+    {
+      resolve: `gatsby-plugin-sass`,
+      options: {
+        postCssPlugins: [
+          require('tailwindcss'),
+          require('./tailwind.config.js'), // Optional: Load custom Tailwind CSS configuration
+        ],
+      },
+    },
     `gatsby-plugin-lodash`,
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-typescript`,
+    `gatsby-plugin-emotion`,
     {
       resolve: `gatsby-plugin-root-import`,
       options: {

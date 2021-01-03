@@ -1,40 +1,42 @@
 .social-share {
-  text-align: right;
-  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+
+  * + * {
+    margin-left: .5rem;
+  }
 }
 
 .resp-sharing-button__link,
 .resp-sharing-button__icon {
-  display: inline-block;
-  vertical-align: middle;
+  //display: inline-block;
   border: none;
 }
 
 .resp-sharing-button__link {
   text-decoration: none;
   color: #fff;
-  margin: 4px;
   height: 33px;
-
-  .service-label {
-    font-size: 12px;
-    padding-right: 4px;
-  }
 }
 
 .resp-sharing-button {
-  height: 33px;
-  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
   transition: 25ms ease-out;
-  padding: 3px 8px 3px 10px;
+  padding: 3px;
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
 .resp-sharing-button__icon svg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 1em;
   height: 1.5em;
-  margin-right: 0.4em;
-  vertical-align: top;
 }
 
 .resp-sharing-button__icon {
