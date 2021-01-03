@@ -1,15 +1,14 @@
-import React, { useContext, useEffect, useMemo, useState } from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'gatsby';
-import { GitHubIcon } from '../social-share/github-icon';
 import Logo from 'content/assets/logo.svg';
 import LogoWhite from 'content/assets/logo-white.svg';
 import styled from '@emotion/styled';
 
 import './index.scss';
-import * as Dom from '../../utils/dom';
 import { THEME } from '../../constants';
-import * as Storage from '../../utils/storage';
 import ThemeContext from '../../contexts/theme';
+import tw from 'twin.macro';
+import { ThemeSwitch } from '../theme-switch';
 
 interface ITopProps {
   title: string;
@@ -25,9 +24,10 @@ const TopContainer = styled.div`
 
   width: 100%;
   height: 120px;
-  padding: 35px 40px;
 
+  box-sizing: border-box;
   background: transparent;
+  ${tw`px-8 py-6`}
 `;
 
 export const Top: React.FC<ITopProps> = ({ title, location, rootPath }) => {
@@ -40,6 +40,7 @@ export const Top: React.FC<ITopProps> = ({ title, location, rootPath }) => {
         <Link to={`/`} className="link">
           {state?.theme === THEME.DARK ? <LogoWhite /> : <Logo />}
         </Link>
+        <ThemeSwitch />
       </TopContainer>
     </>
   );

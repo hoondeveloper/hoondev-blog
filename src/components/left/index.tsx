@@ -5,22 +5,23 @@ import tw from 'twin.macro';
 
 const LeftContainer = styled.div`
   width: 300px;
-  padding: 30px 40px;
+  flex-shrink: 0;
+  ${tw`px-8 py-4`}
 `;
 
 const Name = styled.span`
   display: block;
   font-size: 22px;
-  font-family: 'Object Sans', serif;
+  font-family: 'Montserrat', serif;
   font-weight: 800;
   letter-spacing: 0.01em;
-  ${tw`text-gray-700 dark:text-gray-300`}
+  ${tw`text-gray-800 dark:text-gray-200`}
 `;
 
 const Job = styled.span`
   display: block;
   font-size: 16px;
-  font-family: 'Object Sans', serif;
+  font-family: 'Montserrat', serif;
   font-weight: 400;
   letter-spacing: -0.01em;
   line-height: 16px;
@@ -39,7 +40,11 @@ const DetailItemContainer = styled.div`
   align-items: center;
 
   * + * {
-    margin-left: 10px;
+    margin-left: 0.8rem;
+  }
+
+  & + & {
+    margin-top: 0.2rem;
   }
 `;
 
@@ -62,12 +67,10 @@ export const Left: React.FC<any> = () => {
       <Name>Lim Ji Hoon</Name>
       <Job>front-end developer</Job>
       <Divider />
-      <div className={'space-y-1'}>
-        <DetailItem icon={'🏠'} text={'Seoul, South Korea'} />
-        <DetailItem icon={'🏫'} text={'Chung-Ang Univ. SW Dept.'} />
-        <DetailItem icon={'🏢'} text={'Emmental Inc.'} />
-        <DetailItem icon={'📫'} text={'hoonskyn9@gmail.com'} />
-      </div>
+      <DetailItem icon={'🏠'} text={'Seoul, South Korea'} />
+      <DetailItem icon={'🏫'} text={'Chung-Ang Univ. SW Dept.'} />
+      <DetailItem icon={'🏢'} text={'Emmental Inc.'} />
+      <DetailItem icon={'📫'} text={'hoonskyn9@gmail.com'} />
     </LeftContainer>
   );
 };

@@ -1,10 +1,7 @@
 import React, { ReactNodeArray } from 'react';
 
 import { Top } from '../components/top';
-import { Header } from '../components/header';
-import { ThemeSwitch } from '../components/theme-switch';
 import { Footer } from '../components/footer';
-import { rhythm } from '../utils/typography';
 
 import './index.scss';
 import { Left } from '../components/left';
@@ -29,16 +26,7 @@ export const Layout: React.FC<LayoutProps> = ({ location, title, children }) => 
       <Top title={title} location={location} rootPath={rootPath} />
       <LayoutContentsContainer>
         <Left />
-        <div
-          style={{
-            marginLeft: `auto`,
-            marginRight: `auto`,
-            maxWidth: rhythm(24),
-            padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
-          }}
-        >
-          <ThemeSwitch />
-          <Header title={title} location={location} rootPath={rootPath} />
+        <div className={'mx-auto lg:container px-8 py-4'}>
           {children}
           <Footer />
         </div>

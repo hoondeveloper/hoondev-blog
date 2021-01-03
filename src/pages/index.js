@@ -1,7 +1,6 @@
 import { graphql } from 'gatsby';
 import _ from 'lodash';
 import React, { useMemo } from 'react';
-import { Bio } from '../components/bio';
 import { Category } from '../components/category';
 import { Contents } from '../components/contents';
 import { Head } from '../components/head';
@@ -13,7 +12,6 @@ import { useScrollEvent } from '../hooks/useScrollEvent';
 import { Layout } from '../layout';
 import * as Dom from '../utils/dom';
 import * as EventManager from '../utils/event-manager';
-import ThemeContext, { ThemeProvider } from '../contexts/theme';
 
 const BASE_LINE = 80;
 
@@ -44,7 +42,6 @@ export default ({ data, location }) => {
   return (
     <Layout location={location} title={siteMetadata.title}>
       <Head title={HOME_TITLE} keywords={siteMetadata.keywords} />
-      <Bio />
       <Category categories={categories} category={category} selectCategory={selectCategory} />
       <Contents
         posts={posts}
