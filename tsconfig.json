@@ -11,8 +11,8 @@
       ],
       "*": [
         "src/types/*",
-        "src/**/*",
-        "content/**/*",
+        "src/*",
+        "content/*",
         "*"
       ]
     },
