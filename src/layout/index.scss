@@ -4,6 +4,7 @@
 @import '../styles/font';
 
 body {
+  overflow-x: hidden;
   font-family: 'Inter', 'Noto Sans KR', sans-serif;
   background-color: $light-background-color;
   -webkit-text-size-adjust: antialiased;
