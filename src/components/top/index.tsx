@@ -45,6 +45,8 @@ const TopContainerForPost = styled.div`
 
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
+  
+  z-index: 999;
 
   svg {
     ${tw`w-36`};
