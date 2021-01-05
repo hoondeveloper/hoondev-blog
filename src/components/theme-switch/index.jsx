@@ -58,7 +58,6 @@ export const ThemeSwitch = () => {
   const { actions } = useContext(ThemeContext);
 
   const handleChange = checked => {
-    console.log(checked);
     const theme = getTheme(checked);
 
     Storage.setTheme(checked);

@@ -55,6 +55,14 @@ module.exports = {
             },
           },
           {
+            resolve: `gatsby-remark-autolink-headers`,
+            options: {
+              offsetY: `100`,
+              maintainCase: true,
+              removeAccents: false,
+            },
+          },
+          {
             resolve: `gatsby-remark-prismjs`,
             options: {
               inlineCodeMarker: '%',
@@ -62,7 +70,6 @@ module.exports = {
           },
           `gatsby-remark-copy-linked-files`,
           `gatsby-remark-smartypants`,
-          `gatsby-remark-autolink-headers`,
           `gatsby-remark-emoji`,
         ],
       },
