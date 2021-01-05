@@ -31,9 +31,9 @@ export const Layout: React.FC<LayoutProps> = ({ location, title, children, isPos
       <LayoutContentsContainer>
         {!isPost && <Profile />}
         <div
-          className={classNames('mx-auto lg:container w-full md:px-8 py-4', {
-            'px-8 mt-24': isPost,
-            'px-4': !isPost,
+          className={classNames('mx-auto w-full md:px-8 py-4', {
+            'px-8 mt-24 max-w-screen-md': isPost,
+            'px-4 max-w-screen-xl': !isPost,
           })}
         >
           {children}
