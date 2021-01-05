@@ -5,17 +5,6 @@
     "jsx": "preserve",
     "lib": ["dom", "esnext"],
     "baseUrl": ".",
-    "paths": {
-      "@assets": [
-        "src/assets/*"
-      ],
-      "*": [
-        "src/types/*",
-        "src/*",
-        "content/*",
-        "*"
-      ]
-    },
     "strict": true,
     "noEmit": true,
     "isolatedModules": true,
