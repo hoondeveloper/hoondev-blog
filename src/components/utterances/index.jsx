@@ -19,18 +19,7 @@ export const Utterances = ({ repo }) => {
 
   const { state } = useContext(ThemeContext);
 
-  const [isLoaded, setIsLoaded] = useState(true);
-
-  const loadingOptions = {
-    renderer: 'svg',
-    loop: true,
-    autoplay: true,
-    animationData: loadingAnimationData,
-  };
-
   useEffect(() => {
-    Dom.getElement('.utterances');
-
     const lightElm = document.createElement('script');
     const darkElm = document.createElement('script');
     const utterancesConfig = {
@@ -52,23 +41,10 @@ export const Utterances = ({ repo }) => {
 
     lightElmRef.current.appendChild(lightElm);
     darkElmRef.current.appendChild(darkElm);
-
-    darkElmRef.current.addEventListener('DOMNodeInserted', () => {
-      const utterancesIframe = Dom?.getElement('.utterances')?.querySelector('iframe');
-
-      const callback = () => {
-        setIsLoaded(false);
-        utterancesIframe.removeEventListener('load', callback);
-      };
-
-      setIsLoaded(true);
-      utterancesIframe?.addEventListener('load', callback);
-    });
   }, []);
 
   return (
     <>
-      {isLoaded && <Lottie options={loadingOptions} height={200} width={200} />}
       <div className={classNames({ hidden: state?.theme === THEME.LIGHT })} ref={darkElmRef} />
       <div className={classNames({ hidden: state?.theme === THEME.DARK })} ref={lightElmRef} />
     </>

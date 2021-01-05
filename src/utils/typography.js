@@ -20,15 +20,17 @@ GitHubTheme.overrideThemeStyles = () => {
     h1: {
       fontWeight: 600,
       lineHeight: 1.2,
-      paddingBottom: '1rem',
+      paddingBottom: '0.6rem',
+      marginTop: '2rem',
+      marginBottom: '0.8rem',
     },
 
     h2: {
       fontWeight: 500,
       lineHeight: 1.2,
-      paddingBottom: '1rem',
-      marginTop: '2rem',
-      marginBottom: '1.2rem',
+      paddingBottom: '0.6rem',
+      marginTop: '1.8rem',
+      marginBottom: '0.8rem',
     },
 
     ul: {
