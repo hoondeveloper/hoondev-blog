@@ -63,6 +63,14 @@ module.exports = {
             },
           },
           {
+            resolve: `gatsby-plugin-robots-txt`,
+            options: {
+              host: 'https://feed.hoondev.com',
+              sitemap: 'https://feed.hoondev.com/sitemap.xml',
+              policy: [{ userAgent: '*', allow: '/' }],
+            },
+          },
+          {
             resolve: `gatsby-remark-prismjs`,
             options: {
               inlineCodeMarker: '%',
