@@ -40,6 +40,9 @@
 }
 
 .resp-sharing-button__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   stroke: #fff;
   fill: none;
 }
