@@ -6,7 +6,7 @@ const Title = styled.h1`
   margin-top: 0;
   font-family: 'Montserrat', 'Noto Sans KR', sans-serif;
   font-size: 2.2rem;
-  ${tw`border-b border-gray-200 dark:border-gray-800 pb-8`}
+  ${tw`border-b border-gray-200 dark:border-gray-800 pb-8 text-2xl md:text-3xl`}
 `;
 
 export const PostTitle = ({ title }) => <Title>{title}</Title>;
