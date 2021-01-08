@@ -13,7 +13,7 @@ const Name = styled.span`
   display: block;
   font-size: 22px;
   font-family: 'Montserrat', serif;
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: 0.01em;
   ${tw`text-gray-700 dark:text-gray-300`}
 `;

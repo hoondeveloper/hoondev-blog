@@ -12,6 +12,7 @@ const Container = styled.div`
 
 const Title = styled.h3`
   font-family: 'Montserrat', 'Noto Sans KR', sans-serif;
+  font-weight: 500;
   letter-spacing: -0.02rem;
   margin: 0.8rem 0 0.6rem;
   ${tw`text-gray-700 dark:text-gray-200`}
