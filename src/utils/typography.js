@@ -21,7 +21,7 @@ GitHubTheme.overrideThemeStyles = () => {
       fontWeight: 600,
       lineHeight: 1.2,
       paddingBottom: '0.6rem',
-      marginTop: '2rem',
+      marginTop: '2.4rem',
       marginBottom: '0.8rem',
     },
 
@@ -29,16 +29,12 @@ GitHubTheme.overrideThemeStyles = () => {
       fontWeight: 500,
       lineHeight: 1.2,
       paddingBottom: '0.6rem',
-      marginTop: '1.8rem',
+      marginTop: '2.2rem',
       marginBottom: '0.8rem',
     },
 
-    ul: {
-      marginBottom: '6px',
-    },
-
     li: {
-      marginBottom: '2px',
+      marginBottom: '6px',
     },
   };
 };

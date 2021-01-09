@@ -6,9 +6,9 @@ module.exports = {
   siteUrl: `https://feed.hoondev.com`, // Your blog site url
   social: {
     twitter: ``, // Your Twitter account
-    github: ``, // Your GitHub account
+    github: `hoondeveloper`, // Your GitHub account
     medium: ``, // Your Medium account
-    facebook: ``, // Your Facebook account
+    facebook: `hoondeveloper`, // Your Facebook account
     linkedin: ``, // Your LinkedIn account
   },
   icon: `content/assets/hoondev.png`, // Add your favicon
