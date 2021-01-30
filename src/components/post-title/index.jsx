@@ -8,6 +8,8 @@ const Title = styled.h1`
 
   margin-top: 0;
   font-family: 'Montserrat', 'Noto Sans KR', sans-serif;
+  line-height: 1.25 !important;
+
   ${tw`border-b border-gray-200 dark:border-gray-800 pb-8 text-3xl md:text-5xl tracking-tight`}
 `;
 
