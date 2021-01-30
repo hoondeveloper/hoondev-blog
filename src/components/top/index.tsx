@@ -32,7 +32,7 @@ const TopContainer = styled.div`
   ${tw`px-8 py-6 w-full h-24 md:h-36`}
 `;
 
-const TopContainerForPost = styled.div<{ shadow: boolean }>`
+const TopContainerForPost = styled.div<{ scrollDown: boolean }>`
   position: fixed;
   top: 0;
 
@@ -48,33 +48,29 @@ const TopContainerForPost = styled.div<{ shadow: boolean }>`
 
   z-index: 999;
 
-  box-shadow: ${props =>
-    props?.shadow
-      ? tw`shadow shadow-2xl border-solid border-0 border-b border-white border-opacity-5`
-      : 'none'};
-
   svg {
     ${tw`w-36`};
   }
 
-  ${tw`px-8 py-6 w-full h-24`};
+  ${tw`transition-all border-solid border-0 border-b border-black dark:border-white border-opacity-0 dark:border-opacity-0 px-8 py-6 w-full h-24`};
+  ${props => (props?.scrollDown ? tw`border-opacity-5 dark:border-opacity-5` : null)};
 `;
 
 export const Top: React.FC<ITopProps> = ({ title, location, rootPath, isPost }) => {
   const isRoot = location.pathname === rootPath;
   const { state } = useContext(ThemeContext);
-  const [topShadow, setTopShadow] = useState(false);
+  const [scrollDown, setScrollDown] = useState(false);
 
   useEffect(() => {
     window.addEventListener('scroll', _ => {
-      setTopShadow(window.scrollY > 0);
+      setScrollDown(window.scrollY > 0);
     });
   }, []);
 
   return (
     <>
       {isPost ? (
-        <TopContainerForPost shadow={topShadow}>
+        <TopContainerForPost scrollDown={scrollDown}>
           <Link to={`/`}>{state?.theme === THEME.DARK ? <LogoWhite /> : <Logo />}</Link>
           <ThemeSwitch />
         </TopContainerForPost>
