@@ -37,9 +37,9 @@ export const Layout: React.FC<LayoutProps> = ({ location, title, children, isPos
           })}
         >
           {children}
-          <Footer />
         </div>
       </LayoutContentsContainer>
+      <Footer />
     </ThemeProvider>
   );
 };
