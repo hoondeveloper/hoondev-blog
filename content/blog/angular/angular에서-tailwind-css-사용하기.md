@@ -1,10 +1,12 @@
 ---
-title: Angular에서 Tailwind CSS 사용하기
+title: Angular에서 Tailwind CSS 사용하기 (deprecated)
 date: 2020-07-14 17:43:03
 category: angular
 thumbnail: { thumbnailSrc }
 draft: false
 ---
+
+> Angular에서 TailwindCSS를 공식적으로 지원하게 되면서 아래의 일련의 과정을 진행할 필요가 없게 되었습니다. TailwindCSS 관련 최신 게시글을 참고하세요.
 
 회사에서 Tailwind CSS를 도입하게 되면서, Tailwind CSS에 대해서 알아보기로 하였다.
 

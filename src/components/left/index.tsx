@@ -52,6 +52,19 @@ const DetailItemText = styled.span`
   ${tw`font-light text-sm text-gray-600 dark:text-gray-400`}
 `;
 
+const ResumeButton = styled.button`
+  padding: 0.5rem 0.8rem;
+  font-family: 'Montserrat', serif;
+  font-weight: bold;
+  font-size: 0.8rem;
+
+  &:focus {
+    box-shadow: 0px 0px 0px 2px #fff;
+  }
+
+  ${tw`bg-azure-a100 text-white border-none w-full cursor-pointer rounded-full tracking-wider transform hover:shadow-lg hover:-translate-y-0.5 focus:outline-none transition`}
+`;
+
 const DetailItem: React.FC<{ icon: string; text: string }> = ({ icon, text }) => {
   return (
     <DetailItemContainer>
@@ -71,6 +84,9 @@ export const Profile: React.FC<any> = () => {
       <DetailItem icon={'🏫'} text={'Chung-Ang Univ. SW Dept.'} />
       <DetailItem icon={'🏢'} text={'Emmental Inc.'} />
       <DetailItem icon={'📫'} text={'hoonskyn9@gmail.com'} />
+      <a href="https://hoondev.com" target="_blank">
+        <ResumeButton tw={'mt-8'}>RESUME</ResumeButton>
+      </a>
     </LeftContainer>
   );
 };
