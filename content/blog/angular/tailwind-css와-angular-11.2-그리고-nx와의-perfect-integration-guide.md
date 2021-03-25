@@ -1,5 +1,5 @@
 ---
-title: Tailwind CSS와 Angular 11.2+ 그리고 Nx와의 Perfect Integration Guide
+title: Tailwind CSS와 Angular 11.2 그리고 Nx와의 Perfect Integration Guide
 date: 2021-03-13 19:03:74
 category: angular
 thumbnail: { thumbnailSrc }
