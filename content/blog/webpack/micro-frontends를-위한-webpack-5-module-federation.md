@@ -147,7 +147,7 @@ new ModuleFederationPlugin({
 - `remotes` : 사용할 Remote 빌드의 위치 정의. 여기서 app2는 `app2@http://localhost:3002/remoteEntry.js`임. (app2@ + getRemoteEntryUrl 함수 리턴값)
 - `shared` : 의존성 모듈을 어떻게 공유할지를 정의. `react`와 `react-dom`을 공유
     - `singleton: true`를 통해 동일한 버전의 react 패키지를 싱글톤으로 공유
-    - [더 많은 shared 프로퍼티에 관련 속성 보러가기](https://webpack.js.org/configuration/output/#outputlibrarytype)
+    - [더 많은 shared 프로퍼티에 관련 속성 보러가기](https://webpack.js.org/plugins/module-federation-plugin/#eager)
 
 ### Remote 앱의 webpack.config.js
 
